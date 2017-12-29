@@ -1,0 +1,20 @@
+[start]
+x = 70
+y = 70
+
+[end]
+x = 190
+y = 70
+
+[[polygon]]
+    [[polygon.point]]
+    x = 130
+    y = 40
+
+    [[polygon.point]]
+    x = 150
+    y = 90
+
+    [[polygon.point]]
+    x = 110
+    y = 90
