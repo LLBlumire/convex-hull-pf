@@ -6,8 +6,6 @@ authors = ["Lucille Blumire <llblumire@gmail.com>"]
 [dependencies]
 clap = "*"
 image = "*"
-ncollide = "*"
 serde = "*"
 serde_derive = "*"
 toml = "*"
-nalgebra = "*"

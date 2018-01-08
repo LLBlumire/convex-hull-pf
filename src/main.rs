@@ -7,8 +7,8 @@ extern crate toml;
 use clap::{Arg, App};
 use std::io::Read;
 use std::fs::File;
-use convex_hull_pf::io::input::input::Input;
-use convex_hull_pf::io::output::output::Output;
+use convex_hull_pf::io::input::Input;
+use convex_hull_pf::io::output::Output;
 use convex_hull_pf::process::process::process;
 
 macro_rules! hard_crash {

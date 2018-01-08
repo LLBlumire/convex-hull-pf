@@ -1,5 +1,5 @@
-use io::common::coord::Coord;
-use io::input::polygon::Polygon;
+use ::shape::coord::Coord;
+use ::shape::polygon::Polygon;
 
 #[derive(Serialize, Deserialize, Debug)]
 pub struct Input {

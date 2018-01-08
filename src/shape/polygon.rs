@@ -1,4 +1,4 @@
-use io::common::coord::Coord;
+use ::shape::coord::Coord;
 
 #[derive(Serialize, Deserialize, Debug)]
 pub struct Polygon {
