@@ -40,16 +40,16 @@ pub fn process(input: &Input) -> Output {
                     .union(&hull_segment.get_intersecting_polygon_coords(&input.polygons))
                     .cloned()
                     .collect();
-
-                if polypoints == union {
-                    final_polypoints = polypoints.clone();
-                    final_polypoints.insert(*origin);
-                    final_polypoints.insert(*destination);
-                    break 'generate_hull;
-                }
-
-                polypoints = union;
             }
+            if polypoints == union {
+                final_polypoints = polypoints.clone();
+                final_polypoints.insert(*origin);
+                final_polypoints.insert(*destination);
+                break 'generate_hull;
+            }
+
+            polypoints = union;
+
 
             polypoints.insert(*origin);
             polypoints.insert(*destination);
