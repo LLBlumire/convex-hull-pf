@@ -18,3 +18,7 @@ y = 70
     [[polygon.point]]
     x = 110
     y = 90
+
+    [[polygon.point]]
+    x = 130
+    y = 70

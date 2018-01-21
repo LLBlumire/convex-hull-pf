@@ -1,0 +1,39 @@
+[start]
+x = 70
+y = 240
+
+[end]
+x = 780
+y = 205
+
+[[polygon]]
+    [[polygon.point]]
+    x = 375
+    y = 340
+    [[polygon.point]]
+    x = 550
+    y = 340
+    [[polygon.point]]
+    x = 550
+    y = 250
+    [[polygon.point]]
+    x = 640
+    y = 280
+    [[polygon.point]]
+    x = 640
+    y = 105
+    [[polygon.point]]
+    x = 525
+    y = 15
+    [[polygon.point]]
+    x = 415
+    y = 15
+    [[polygon.point]]
+    x = 415
+    y = 100
+    [[polygon.point]]
+    x = 260
+    y = 250
+    [[polygon.point]]
+    x = 460
+    y = 280
