@@ -30,6 +30,7 @@ pub fn process(input: &Input) -> Output {
         destination = destination_o.unwrap();
 
         let mut hull: HashSet<Segment> = HashSet::new();
+        let mut final_polypoints;
         'generate_hull: loop {
             let mut polypoints = Segment::from_coords(*origin, *destination)
                 .get_intersecting_polygon_coords(&input.polygons);
@@ -41,6 +42,9 @@ pub fn process(input: &Input) -> Output {
                     .collect();
 
                 if polypoints == union {
+                    final_polypoints = polypoints.clone();
+                    final_polypoints.insert(*origin);
+                    final_polypoints.insert(*destination);
                     break 'generate_hull;
                 }
 
@@ -52,6 +56,7 @@ pub fn process(input: &Input) -> Output {
 
             hull = hull.union(&calculate_hull(&polypoints)).cloned().collect();
         }
+        hull = calculate_hull(&final_polypoints);
         hulls.push(Hull::from_segment_set(hull.into_iter().collect()));
     }
 
