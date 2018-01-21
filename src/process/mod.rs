@@ -69,7 +69,7 @@ pub fn calculate_hull<S: BuildHasher>(polypoints: &HashSet<Coord, S>) -> HashSet
         panic!();
     }
 
-    hull.iter().cloned().collect()
+    hull
 }
 
 /// Calculates the quick hull of a set of points, outputting it into a buffer.
